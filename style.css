@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #4a0080;
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2d004d;
+  padding: 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+#btnGenero {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+  background-color: #ff69b4;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#btnGenero.hombre {
+  background-color: #7700cc;
+}
+
+body.mujer {
+  background-color: #7d1a4a;
+}
+
+body.mujer header,
+body.mujer .filtros,
+body.mujer .card {
+  background-color: #4a0028;
+  border-color: #cc0066;
+}
+
+body.mujer .filtros select,
+body.mujer .filtros input {
+  background-color: #2d0018;
+  border-color: #cc0066;
+}
+
+body.mujer .filtros button {
+  background-color: #cc0066;
+}
+
+body.mujer .filtros button:hover {
+  background-color: #ff1a8c;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.autor {
+  margin-top: 4px;
+  color: #d9b3ff;
+}
+
+main {
+  max-width: 860px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #2d004d;
+  padding: 16px;
+  border: 1px solid #7700cc;
+}
+
+.filtros label {
+  color: #d9b3ff;
+}
+
+.filtros select,
+.filtros input {
+  padding: 6px 10px;
+  border: 1px solid #7700cc;
+  background-color: #1a0033;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.filtros button {
+  padding: 7px 18px;
+  background-color: #7700cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filtros button:hover {
+  background-color: #9900ff;
+}
+
+.resultados {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background-color: #2d004d;
+  border: 1px solid #7700cc;
+  padding: 14px;
+}
+
+.card h3 {
+  color: #d9b3ff;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #e0c8ff;
+  margin: 2px 0;
+}
+
+.card .calif {
+  margin-top: 8px;
+  color: #bb88ff;
+  font-weight: bold;
+}
+
+.sin-resultados {
+  text-align: center;
+  color: #d9b3ff;
+  padding: 24px;
+  grid-column: 1 / -1;
+}
